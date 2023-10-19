@@ -15,4 +15,5 @@ function printAllNumbersThenAllPairSums(numbers) {
     });
 }
 
+// if 3 nested loops , so 99% is a bad idea
 printAllNumbersThenAllPairSums([1,2,3,4,5])
