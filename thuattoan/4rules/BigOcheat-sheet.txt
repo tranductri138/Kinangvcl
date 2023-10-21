@@ -21,6 +21,7 @@ O(a*b)
 + for steps in order
 * for nested steps
 Rule 4: Drop Non-dominant terms
+
 -What causes Space complexity?-
 Variables
 Data Structures
