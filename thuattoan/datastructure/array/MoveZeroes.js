@@ -79,9 +79,10 @@ function moveZeroes5(nums) {
 
 const case1 = [0, 1, 0, 3, 12]
 const case2 = [0]
-moveZeroes(case1)
-moveZeroes(case2)
-moveZeroes2(case2)
-moveZeroes4(case1)
+// moveZeroes(case1)
+// moveZeroes(case2)
+// moveZeroes2(case2)
+// moveZeroes4(case1)
+moveZeroes5(case1)
 console.log(case1)
 // console.log(case2)
