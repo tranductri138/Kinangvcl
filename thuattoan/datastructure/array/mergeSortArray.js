@@ -12,7 +12,9 @@ function mergeSortedArrays(arrayFirst, arraySecond){
 
     // recursion
     while (arrFirstItem || arrSecondItem){
-        // console.log(arrFirstItem ,'and' , arrSecondItem )
+        // risk first : value === 0 also can not access because condition of while(...=> condition)
+        // risk second : if u use && instead || will miss last element
+        console.log(arrFirstItem ,'and' , arrSecondItem )
         if(arrSecondItem === undefined || arrFirstItem < arrSecondItem){
             // condition array F < arr Sec of === so throw case 2
             // if in case
