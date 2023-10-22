@@ -1,0 +1,4 @@
+câu hỏi phỏng vấn
+quan trọng nhất đó là mối quan hệ giữa array và string
+tách một chuỗi ra và sau đó xào nấu nó
+rồi sau đó lại merge chúng lại

@@ -14,3 +14,6 @@ function b() {
 
 const d = new b()
 // able to create new because have construct
+
+const cost = 5_000_000
+console.log(cost.toLocaleString())
