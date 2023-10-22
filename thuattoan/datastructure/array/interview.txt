@@ -2,3 +2,17 @@ câu hỏi phỏng vấn
 quan trọng nhất đó là mối quan hệ giữa array và string
 tách một chuỗi ra và sau đó xào nấu nó
 rồi sau đó lại merge chúng lại
+
+
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link
+
+nói về array
+fast lookup
+fast push/pop
+
+ordered thứ tự
+
+bad feel
+ slow insert
+ slow deletes
+ fixed sizes * if use static array
