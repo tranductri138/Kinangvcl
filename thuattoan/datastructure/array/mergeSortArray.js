@@ -11,6 +11,7 @@ function mergeSortedArrays(arrayFirst, arraySecond){
     let indexArrSecond = 1;
 
     while (firstItemArrFirst || firstItemArrSecond){
+        // console.log(firstItemArrFirst ,'and' , firstItemArrSecond )
         if(firstItemArrSecond === undefined || firstItemArrFirst < firstItemArrSecond){
             mergedArray.push(firstItemArrFirst);
             firstItemArrFirst = arrayFirst[indexArrFirst];
