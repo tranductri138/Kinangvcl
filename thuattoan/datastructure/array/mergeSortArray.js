@@ -5,21 +5,22 @@ function mergeSortedArrays(arrayFirst, arraySecond){
 
     const mergedArray = [];
     // should use destructuring
-    let firstItemArrFirst = arrayFirst[0];
-    let firstItemArrSecond = arraySecond[0];
+    let arrFirstItem = arrayFirst[0];
+    let arrSecondItem = arraySecond[0];
     let indexArrFirst = 1;
     let indexArrSecond = 1;
 
-    while (firstItemArrFirst || firstItemArrSecond){
-        // console.log(firstItemArrFirst ,'and' , firstItemArrSecond )
-        if(firstItemArrSecond === undefined || firstItemArrFirst < firstItemArrSecond){
-            mergedArray.push(firstItemArrFirst);
-            firstItemArrFirst = arrayFirst[indexArrFirst];
+    // recursion
+    while (arrFirstItem || arrSecondItem){
+        // console.log(arrFirstItem ,'and' , arrSecondItem )
+        if(arrSecondItem === undefined || arrFirstItem < arrSecondItem){
+            mergedArray.push(arrFirstItem);
+            arrFirstItem = arrayFirst[indexArrFirst];
             indexArrFirst++;
         }
         else {
-            mergedArray.push(firstItemArrSecond);
-            firstItemArrSecond = arraySecond[indexArrSecond];
+            mergedArray.push(arrSecondItem);
+            arrSecondItem = arraySecond[indexArrSecond];
             indexArrSecond++;
         }
     }
