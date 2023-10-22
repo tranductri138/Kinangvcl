@@ -21,9 +21,10 @@ function twoSum(nums, target) {
 };
 
 function twoSum2 (nums , target) {
-    let storage = {} //o(1)
+    const storage = {} //o(1)
     // storage increase memory
     // create map assign nums === index and then return
+    // map with key = num and value index so it will be create more variable
     // o(n)
     for (let [index,num] of nums.entries()) {
         if (storage[num] !== undefined) return [storage[num] ,index]
