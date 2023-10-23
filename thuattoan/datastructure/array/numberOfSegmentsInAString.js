@@ -9,13 +9,24 @@ function countSegments (str) {
 }
 
 function countSegments2(str) {
+    str = str.trim()
     let segmentCount = 0
     for (let i = 0; i < str.length ; i++) {
-        if ((i === 0 || str.charAt(i) === ' ') && str.charAt(i) !== ' ') {
-            segmentCount++;
-        }
+        if ((i === 0 || str.charAt(i-1) === ' ') && str.charAt(i) !== ' ') segmentCount++
     }
     return segmentCount
+}
+
+function countSegments3(str) {
+    str = str.trim()
+    let res = [];
+    let arr = str.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) {
+            res.push(arr[i]);
+        }
+    }
+    return res.length;
 }
 const case2 = "                "
 const case3= ''
@@ -23,4 +34,4 @@ const case4 =", , , ,        a, eaefa" // expected = 6
 
 console.log(case4.charAt(1))
 // console.log(countSegments(case2))
-console.log(countSegments2(case4))
+console.log(countSegments3(case4))
