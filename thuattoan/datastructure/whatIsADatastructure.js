@@ -6,7 +6,7 @@
 /**
  * Explain
  * You can think of data structure as any sort of compartment or container
- * A dtstt is simply a file cabinet of different types
+ * A ds is simply a file cabinet of different types
  * How to build one
  * How to use it
  * */
