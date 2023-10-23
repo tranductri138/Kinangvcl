@@ -1,0 +1,8 @@
+factory
+builder
+singleton
+observer
+iterator
+strategy
+adapter
+facade
