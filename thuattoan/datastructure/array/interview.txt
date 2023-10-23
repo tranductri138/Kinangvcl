@@ -16,3 +16,6 @@ bad feel
  slow insert
  slow deletes
  fixed sizes * if use static array
+
+// bai easy
+ https://leetcode.com/problems/number-of-segments-in-a-string/
