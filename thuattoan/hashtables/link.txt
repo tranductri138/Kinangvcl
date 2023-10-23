@@ -1,0 +1,9 @@
+tools hash md5
+https://www.miraclesalad.com/webtools/md5.php
+visual
+https://www.cs.usfca.edu/~galles/visualization/OpenHash.html
+
+giai thich tren wiki
+https://en.wikipedia.org/wiki/Hash_table
+
+https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(associative_array)
