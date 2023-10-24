@@ -66,6 +66,34 @@ function hasGroupsSizeX2(deck) {
     return true;
 }
 
+function hasGroupsSizeX3(deck) {
+    if (deck.length < 2) {
+        return false
+    }
+    const gcd = (a, b) => {
+        if (a == 0 || b == 0) {
+            return Math.max(a, b);
+        } else {
+            return gcd(b, a % b);
+        }
+    };
+
+    const summary = {};
+    deck.forEach(d => {
+        summary[d] = (summary[d] || 0) + 1;
+    });
+    const allX = Object.values(summary)
+
+    let g = allX[0]
+    for (let i = 1; i < allX.length; i++) {
+        g = gcd(g, allX[i])
+        if (g < 2) {
+            return false
+        }
+    }
+    return g > 1
+}
+
 const case1 = [1, 2, 3, 4, 4, 3, 2, 1]
 console.log(hasGroupsSizeX(case1))
 const case2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -94,4 +122,4 @@ const case2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13,
     13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15,
     15, 15, 15, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 18, 18, 18, 18]
-console.log(hasGroupsSizeX2(case2))
+console.log(hasGroupsSizeX3(case2))
