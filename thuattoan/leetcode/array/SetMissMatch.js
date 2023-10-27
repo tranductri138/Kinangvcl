@@ -26,5 +26,6 @@ function findErrorNums(nums) {
 const case1 = [1,2,2,4]  // [2,3]
 const case2 =   [1,1]  //[1,2]
 const case3 = [2,2]  //[2,1]
+const case4  =[]
 
 console.log(findErrorNums(case1))
