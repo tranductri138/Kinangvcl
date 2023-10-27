@@ -1,0 +1,61 @@
+Nhom khoi tao / Creational
+builder: cach mot object hon hop duoc tao ra // composite object
+
+factory method: subclass of object duoc khoi tao
+
+prototype: class of object , no dc khoi tao
+
+singleton: truong hop duy nhat cua mot class
+
+Nhom cau truc / Structural
+Adapter:  interface to an object // interface voi mot doi tuong
+
+Bridge: implementation of an object
+// cach trien khai or thuc hien cua mot doi tuong
+
+Composite: structure and composition of an object
+// cau truc va thanh phan cua mot doi tuong
+
+Decorator: responsibilities of an object without subclassing
+// trach nghiem cua mot doi tuong ma ko can phan lop
+
+Facade: interface to a subsystem // interface voi mot he thong con
+
+Flyweight: storage costs of object // chi phi luu tru cua mot doi tuong
+
+Proxy: how an object is accessed, it location
+// cach mot doi tuong dc truy cap va dia diem cua no
+
+Nhom hanh vi / Behavioral
+Chains of Responsibility: object that can fulfill a request
+//doi tuong co the thuc hien mot yeu cau
+
+Command: when add how a request is fulfilled
+// khi nao va cach nao mot request duoc thuc hien
+
+Interpreter: grammar and interpretation of language
+// ngu phap va giai thich mot ngon ngu
+
+Iterator: how an aggregate's element are accessed traversed
+//cach truy mot phan tu tong hop duoc truy cap thong qua
+
+Mediator: how and which object interact with each other
+// lam the nao va cai ma doi tuong tuong tac voi nhau
+
+Memento: what private information is stored outside an
+object , and when // thong tin ca nhan dc luu ben ngoai doi tuong
+va khi nao thi luu
+
+Observer: number of object that depend on another object
+how dependent object stay up to date
+// doi tuong phu thuoc vao doi tuong khac , luon duoc cap nhat
+
+State: state of an object
+
+Strategy: an algorithm
+
+Template Method: step of an algorithm
+
+Visitor: operations that can be applied to object without changing
+their classes// cac thao tac co the ap dung cho cac lop doi tuong
+ma se ko thay doi cac class cua ho
