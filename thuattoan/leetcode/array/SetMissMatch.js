@@ -28,4 +28,4 @@ const case2 =   [1,1]  //[1,2]
 const case3 = [2,2]  //[2,1]
 const case4 =[]
 
-console.log(findErrorNums(case1))
+console.log(findErrorNums(case3))
