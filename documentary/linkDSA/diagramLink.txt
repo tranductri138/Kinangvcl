@@ -1,1 +1,4 @@
 https://coggle.it/diagram/W5u8QkZs6r4sZM3J/t/master-the-interview
+
+diagram nay dung de xem may cai O(1) O(n) for look up
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link
