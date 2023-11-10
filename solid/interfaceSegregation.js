@@ -62,7 +62,7 @@ class NotImplementedError extends Error
     {
         let msg = `${name} is not implemented!`;
         super(msg);
-        // maintain proper stack trace
+        // maintain proper stackandqueue trace
         if (Error.captureStackTrace)
             Error.captureStackTrace(this, NotImplementedError);
         // your custom stuff here :)
