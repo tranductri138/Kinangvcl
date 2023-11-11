@@ -41,7 +41,7 @@ function mergeTwoLists(list1, list2) {
         dummy.next = list2
     }
     return head.next
-};
+}
 
 
 /**
@@ -57,13 +57,13 @@ function mergeTwoLists2(list1, list2) {
 
     // condition
     else if (list1.val <= list2.val){
-        list1.next = mergeTwoLists2(list1.next, list2);
+        list1.next = mergeTwoLists2(list1.next, list2); // list1
         return list1;
     } else{
-        list2.next = mergeTwoLists2(list1, list2.next);
+        list2.next = mergeTwoLists2(list1, list2.next); // list2
         return list2;
     }
-};
+}
 
 
 // 1n2 24 13 34
