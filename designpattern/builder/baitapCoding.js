@@ -1,4 +1,5 @@
-import { describe, it, expect } from '@jest/globals';
+const {describe, it, expect} = require('@jest/globals')
+
 class Field {
     constructor(name) {
         this.name = name;
