@@ -1,21 +1,17 @@
-class Field
-{
-    constructor(name)
-    {
+import { describe, it, expect } from '@jest/globals';
+class Field {
+    constructor(name) {
         this.name = name;
     }
 }
 
-class Class
-{
-    constructor(name)
-    {
+class Class {
+    constructor(name) {
         this.name = name;
         this.fields = [];
     }
 
-    toString()
-    {
+    toString() {
         let buffer = [];
         buffer.push(`class ${this.name} {\n`);
 
@@ -38,38 +34,31 @@ class Class
     }
 }
 
-class CodeBuilder
-{
-    constructor(className)
-    {
+class CodeBuilder {
+    constructor(className) {
         this._class = new Class(className);
     }
 
-    addField(name)
-    {
+    addField(name) {
         this._class.fields.push(
             new Field(name)
         );
         return this;
     }
 
-    toString()
-    {
+    toString() {
         return this._class.toString();
     }
 }
 
-describe('builder', function()
-{
-    it('empty test', function()
-    {
+describe('builder', function () {
+    it('empty test', function () {
         let cb = new CodeBuilder('Foo');
         expect(cb.toString())
             .toEqual('class Foo {\n}');
     });
 
-    it('person test', function()
-    {
+    it('person test', function () {
         let cb = new CodeBuilder('Person');
         cb.addField('name').addField('age');
         expect(cb.toString())
@@ -78,6 +67,6 @@ describe('builder', function()
                 + '    this.name = name;\n'
                 + '    this.age = age;\n'
                 + '  }\n'
-                +'}');
+                + '}');
     });
 });
