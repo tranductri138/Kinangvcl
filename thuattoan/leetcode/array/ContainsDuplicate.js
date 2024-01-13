@@ -49,3 +49,4 @@ const case2 = [1, 2, 3, 4]
 const case3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
 
 console.log(containsDuplicate(case2))
+console.log(containsDuplicate2(case2))
