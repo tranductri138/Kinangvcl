@@ -1,5 +1,5 @@
-//link https://leetcode.com/problems/contains-duplicate/submissions/1145358369/
-//meaning  :Given an integer array nums, return true if any value appears
+// link https://leetcode.com/problems/contains-duplicate/submissions/1145358369/
+// meaning  :Given an integer array nums, return true if any value appears
 // at least twice in the array, and return false if every element is distinct.
 
 /**
