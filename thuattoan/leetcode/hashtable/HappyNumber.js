@@ -3,6 +3,9 @@
  * @param {number} n
  * @return {boolean}
  */
-function isHappy(n) {
+const isHappy = (n) =>{
 
 };
+
+const case1 = 19
+const case2 = 2
