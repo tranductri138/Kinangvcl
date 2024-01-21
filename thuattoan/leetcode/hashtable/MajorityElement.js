@@ -1,4 +1,10 @@
 /**
+ * describe : Given an array nums of size n, return the majority element.
+ * The majority element is the element that appears more than ⌊n / 2⌋ times.
+ * You may assume that the majority element always exists in the array.
+ * */
+
+/**
  * @param {number[]} nums
  * @return {number}
  */
@@ -48,3 +54,7 @@ const case2 = [2, 2, 1, 1, 1, 2, 2]
 console.log(majorityElement(case1))
 console.log(majorityElement(case2))
 console.log(majorityElement2(case2))
+
+
+// ranh thi doc :)))
+// https://tek4.vn/khoa-hoc/cau-truc-du-lieu-va-thuat-toan/thuat-toan-boyer-moore-trong-tim-kiem-xau-con
