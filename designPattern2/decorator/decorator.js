@@ -8,7 +8,7 @@ const User = function (name) {
     };
 }
 
-const DecoratedUser = function (user, street, city) {
+function DecoratedUser(user, street, city) {
     this.user = user;
     this.name = user.name;  // ensures interface stays the same
     this.street = street;
