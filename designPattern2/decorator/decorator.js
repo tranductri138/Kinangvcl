@@ -20,11 +20,10 @@ function DecoratedUser(user, street, city) {
     };
 }
 
-function run() {
 
+function run() {
     const user = new User("Kelly");
     user.say();
-
     const decorated = new DecoratedUser(user, "Broadway", "New York");
     decorated.say();
 }
