@@ -17,7 +17,7 @@ function DecoratedUser(user, street, city) {
     this.say = function () {
         console.log("Decorated User: " + this.name + ", " +
             this.street + ", " + this.city);
-    };
+    }
 }
 
 
